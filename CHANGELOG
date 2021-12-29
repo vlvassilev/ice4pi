@@ -1,3 +1,12 @@
+pi-bridge-2mm (1-1) buster; urgency=medium
+
+  * Reduced the width with 14 mm. Now 2mm side-by-side spaced setups are supported
+  * Added zones for 3.3V on top and additional GND to bottom
+  * All 4 zones now with solid thermal relief and min width and clearance reduced to 0.2 mm
+  * Replaced 16 mm logo with 32 mm
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 29 Dec 2021 00:11:37 +0100
+
 pi-bridge (1-1) buster; urgency=medium
 
   * Initial
