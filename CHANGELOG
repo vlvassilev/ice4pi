@@ -1,3 +1,9 @@
+pi-bridge-2mm (1-2) buster; urgency=medium
+
+  * Corrected distance. Was 4 mm instead of 2 mm
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sun, 13 Feb 2022 23:47:34 +0100
+
 pi-bridge-2mm (1-1) buster; urgency=medium
 
   * Reduced the width with 14 mm. Now 2mm side-by-side spaced setups are supported
