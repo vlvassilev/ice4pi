@@ -1,7 +1,11 @@
-ice4pi is an open hardware platform for FPGA
+ice4pi-bridge is an open hardware platform for FPGA
 development published by Lightside Instruments AS.
 
-The initial release ice4pi-1.0 includes schematic and PCB
+Based on ice4pi-2.0 board but with SMD instead of through-hole
+2x20 pin connector and added additional dedicated set of IO pins
+controling the extension side of the Pi interface.
+
+The initial release ice4pi-bridge-1.0 includes schematic and PCB
 design files for KiCAD.
 
 The project is published by Lightside Instruments AS

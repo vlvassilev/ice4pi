@@ -1,11 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:ice4pi-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
-Title "ice4pi-2.0"
+Title "ice4pi-bridge-1.0"
 Date ""
 Rev ""
 Comp ""
@@ -1671,10 +1670,10 @@ F 4 "SSW-120-01-T-D-006" H 6650 5200 50  0001 C CNN "PN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0133
 U 1 1 622A516D
 P 7450 4150
-F 0 "#PWR?" H 7450 4000 50  0001 C CNN
+F 0 "#PWR0133" H 7450 4000 50  0001 C CNN
 F 1 "+5V" H 7465 4323 50  0000 C CNN
 F 2 "" H 7450 4150 50  0001 C CNN
 F 3 "" H 7450 4150 50  0001 C CNN
@@ -1685,10 +1684,10 @@ Connection ~ 7450 4250
 Wire Wire Line
 	7450 4250 7450 4150
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0137
 U 1 1 622ABE71
 P 8050 6400
-F 0 "#PWR?" H 8050 6150 50  0001 C CNN
+F 0 "#PWR0137" H 8050 6150 50  0001 C CNN
 F 1 "GND" H 8055 6227 50  0000 C CNN
 F 2 "" H 8050 6400 50  0001 C CNN
 F 3 "" H 8050 6400 50  0001 C CNN
@@ -1719,10 +1718,10 @@ Wire Wire Line
 	8050 4450 8050 4850
 Connection ~ 8050 4850
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0142
 U 1 1 622FB201
 P 5400 4150
-F 0 "#PWR?" H 5400 4000 50  0001 C CNN
+F 0 "#PWR0142" H 5400 4000 50  0001 C CNN
 F 1 "+3.3V" H 5415 4323 50  0000 C CNN
 F 2 "" H 5400 4150 50  0001 C CNN
 F 3 "" H 5400 4150 50  0001 C CNN
@@ -1739,10 +1738,10 @@ Wire Wire Line
 	5400 5050 5850 5050
 Connection ~ 5400 4250
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0143
 U 1 1 6230A1D0
 P 5250 6250
-F 0 "#PWR?" H 5250 6000 50  0001 C CNN
+F 0 "#PWR0143" H 5250 6000 50  0001 C CNN
 F 1 "GND" H 5255 6077 50  0000 C CNN
 F 2 "" H 5250 6250 50  0001 C CNN
 F 3 "" H 5250 6250 50  0001 C CNN
@@ -1766,4 +1765,696 @@ Connection ~ 5250 5450
 Wire Wire Line
 	7450 4250 7450 4350
 Connection ~ 8050 5650
+Text GLabel 1200 10150 0    50   Output ~ 0
+iCE_MOSI
+Text GLabel 1200 10250 0    50   Input ~ 0
+iCE_MISO
+Text GLabel 1200 10350 0    50   Output ~ 0
+iCE_SCK
+Text GLabel 2800 9650 2    50   Input ~ 0
+RS232_Tx_TTL
+Text GLabel 2800 9550 2    50   Output ~ 0
+RS232_Rx_TTL
+Text GLabel 2800 10050 2    50   Output ~ 0
+iCE_CREST
+Text GLabel 2800 10250 2    50   Input ~ 0
+iCE_CDONE
+Text GLabel 2800 10350 2    50   Output ~ 0
+iCE_SS_B
+Text GLabel 2800 11150 2    50   BiDi ~ 0
+PIO0_02
+Text GLabel 2800 11050 2    50   BiDi ~ 0
+PIO0_04
+Text GLabel 1200 11050 0    50   BiDi ~ 0
+PIO0_03
+Text GLabel 2800 10950 2    50   BiDi ~ 0
+PIO0_06
+Text GLabel 1200 10950 0    50   BiDi ~ 0
+PIO0_05
+Text GLabel 1200 10750 0    50   BiDi ~ 0
+PIO0_08
+Text GLabel 1200 10650 0    50   BiDi ~ 0
+PIO0_10
+Text GLabel 2800 10550 2    50   BiDi ~ 0
+PIO0_12
+Text GLabel 1200 10550 0    50   BiDi ~ 0
+PIO0_11
+Text GLabel 2800 10450 2    50   BiDi ~ 0
+PIO0_13
+Text GLabel 1200 10850 0    50   BiDi ~ 0
+PIO0_07
+Text GLabel 2800 10750 2    50   BiDi ~ 0
+PIO0_09
+Text GLabel 1200 9950 0    50   BiDi ~ 0
+PIO0_14
+Text GLabel 2800 9950 2    50   BiDi ~ 0
+PIO0_15
+Text GLabel 1200 9850 0    50   BiDi ~ 0
+PIO0_16
+Text GLabel 2800 9750 2    50   BiDi ~ 0
+PIO0_17
+Text GLabel 1200 9750 0    50   BiDi ~ 0
+PIO0_18
+Text GLabel 1200 9550 0    50   BiDi ~ 0
+PIO0_19
+Text GLabel 1200 9450 0    50   BiDi ~ 0
+PIO0_21
+Text GLabel 1200 9350 0    50   BiDi ~ 0
+PIO0_20
+$Comp
+L ice4pi:raspberry_pi_2_3_4_ordered J3
+U 1 1 6204BA23
+P 2000 10200
+F 0 "J3" H 2000 11567 50  0000 C CNN
+F 1 "raspberry_pi_2_3_4_ordered" H 2000 11476 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical_SMD" H 2000 10050 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2000 10050 50  0001 C CNN
+F 4 "SSW-120-01-T-D-006" H 2000 10200 50  0001 C CNN "PN"
+	1    2000 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0147
+U 1 1 6204BA2A
+P 2800 9150
+F 0 "#PWR0147" H 2800 9000 50  0001 C CNN
+F 1 "+5V" H 2815 9323 50  0000 C CNN
+F 2 "" H 2800 9150 50  0001 C CNN
+F 3 "" H 2800 9150 50  0001 C CNN
+	1    2800 9150
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 9250
+Wire Wire Line
+	2800 9250 2800 9150
+$Comp
+L power:GND #PWR0148
+U 1 1 6204BA32
+P 3400 11400
+F 0 "#PWR0148" H 3400 11150 50  0001 C CNN
+F 1 "GND" H 3405 11227 50  0000 C CNN
+F 2 "" H 3400 11400 50  0001 C CNN
+F 3 "" H 3400 11400 50  0001 C CNN
+	1    3400 11400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 11400 3400 10850
+Wire Wire Line
+	3400 10650 3400 10850
+Connection ~ 3400 10850
+Wire Wire Line
+	3400 10150 3400 10650
+Wire Wire Line
+	3400 9850 3400 10150
+Connection ~ 3400 10150
+Wire Wire Line
+	2800 10850 3400 10850
+Wire Wire Line
+	2800 10650 3400 10650
+Wire Wire Line
+	2800 10150 3400 10150
+Wire Wire Line
+	2800 9850 3400 9850
+Wire Wire Line
+	2800 9450 3400 9450
+Wire Wire Line
+	3400 9450 3400 9850
+Connection ~ 3400 9850
+$Comp
+L power:+3.3V #PWR0149
+U 1 1 6204BA45
+P 750 9150
+F 0 "#PWR0149" H 750 9000 50  0001 C CNN
+F 1 "+3.3V" H 765 9323 50  0000 C CNN
+F 2 "" H 750 9150 50  0001 C CNN
+F 3 "" H 750 9150 50  0001 C CNN
+	1    750  9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 9250 750  9250
+Wire Wire Line
+	750  9250 750  9150
+Wire Wire Line
+	750  9250 750  10050
+Wire Wire Line
+	750  10050 1200 10050
+Connection ~ 750  9250
+$Comp
+L power:GND #PWR0150
+U 1 1 6204BA50
+P 600 11250
+F 0 "#PWR0150" H 600 11000 50  0001 C CNN
+F 1 "GND" H 605 11077 50  0000 C CNN
+F 2 "" H 600 11250 50  0001 C CNN
+F 3 "" H 600 11250 50  0001 C CNN
+	1    600  11250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 11150 600  11150
+Wire Wire Line
+	600  11150 600  11250
+Wire Wire Line
+	1200 10450 600  10450
+Wire Wire Line
+	600  10450 600  11150
+Connection ~ 600  11150
+Wire Wire Line
+	1200 9650 600  9650
+Wire Wire Line
+	600  9650 600  10450
+Connection ~ 600  10450
+Wire Wire Line
+	2800 9250 2800 9350
+Connection ~ 3400 10650
+Text GLabel 6600 3450 0    50   BiDi ~ 0
+PIEXT3
+Text GLabel 6600 3350 0    50   BiDi ~ 0
+PIEXT5
+Text GLabel 4650 1350 0    50   BiDi ~ 0
+PIEXT7
+Text GLabel 4650 1450 0    50   BiDi ~ 0
+PIEXT8
+Text GLabel 4650 1550 0    50   BiDi ~ 0
+PIEXT10
+Text GLabel 4650 1650 0    50   BiDi ~ 0
+PIEXT11
+Text GLabel 4650 1750 0    50   BiDi ~ 0
+PIEXT12
+Text GLabel 4650 1850 0    50   BiDi ~ 0
+PIEXT13
+Text GLabel 4650 1950 0    50   BiDi ~ 0
+PIEXT15
+Text GLabel 4650 2050 0    50   BiDi ~ 0
+PIEXT16
+Text GLabel 4650 2150 0    50   BiDi ~ 0
+PIEXT18
+Text GLabel 4650 2250 0    50   BiDi ~ 0
+PIEXT19
+Text GLabel 4650 2350 0    50   BiDi ~ 0
+PIEXT21
+Text GLabel 4650 2450 0    50   BiDi ~ 0
+PIEXT22
+Text GLabel 4650 2550 0    50   BiDi ~ 0
+PIEXT23
+Text GLabel 4650 2650 0    50   BiDi ~ 0
+PIEXT24
+Text GLabel 4650 2750 0    50   BiDi ~ 0
+PIEXT26
+Text GLabel 4650 2850 0    50   BiDi ~ 0
+PIEXT27
+Text GLabel 4650 2950 0    50   BiDi ~ 0
+PIEXT28
+Text GLabel 4650 3050 0    50   BiDi ~ 0
+PIEXT29
+Text GLabel 4650 3150 0    50   BiDi ~ 0
+PIEXT31
+Text GLabel 4650 3250 0    50   BiDi ~ 0
+PIEXT32
+Text GLabel 2950 950  0    50   BiDi ~ 0
+PIEXT33
+Text GLabel 2950 1050 0    50   BiDi ~ 0
+PIEXT35
+Text GLabel 2950 1150 0    50   BiDi ~ 0
+PIEXT36
+Text GLabel 2950 1250 0    50   BiDi ~ 0
+PIEXT37
+Text GLabel 2950 2150 0    50   BiDi ~ 0
+PIEXT38
+Text GLabel 2950 2250 0    50   BiDi ~ 0
+PIEXT40
+Text GLabel 4000 9450 0    50   BiDi ~ 0
+PIEXT5
+Text GLabel 4000 9550 0    50   BiDi ~ 0
+PIEXT7
+Text GLabel 4000 9750 0    50   BiDi ~ 0
+PIEXT11
+Text GLabel 4000 9850 0    50   BiDi ~ 0
+PIEXT13
+Text GLabel 4000 9950 0    50   BiDi ~ 0
+PIEXT15
+Text GLabel 4000 10150 0    50   BiDi ~ 0
+PIEXT19
+Text GLabel 4000 10250 0    50   BiDi ~ 0
+PIEXT21
+Text GLabel 4000 10350 0    50   BiDi ~ 0
+PIEXT23
+Text GLabel 4000 10550 0    50   BiDi ~ 0
+PIEXT27
+Text GLabel 4000 10650 0    50   BiDi ~ 0
+PIEXT29
+Text GLabel 4000 10750 0    50   BiDi ~ 0
+PIEXT31
+Text GLabel 4000 10850 0    50   BiDi ~ 0
+PIEXT33
+Text GLabel 4000 10950 0    50   BiDi ~ 0
+PIEXT35
+Text GLabel 4000 11050 0    50   BiDi ~ 0
+PIEXT37
+Text GLabel 5600 9550 2    50   BiDi ~ 0
+PIEXT8
+Text GLabel 5600 9650 2    50   BiDi ~ 0
+PIEXT10
+Text GLabel 5600 9750 2    50   BiDi ~ 0
+PIEXT12
+Text GLabel 5600 9950 2    50   BiDi ~ 0
+PIEXT16
+Text GLabel 5600 10050 2    50   BiDi ~ 0
+PIEXT18
+Text GLabel 5600 10250 2    50   BiDi ~ 0
+PIEXT22
+Text GLabel 5600 10350 2    50   BiDi ~ 0
+PIEXT24
+Text GLabel 5600 10450 2    50   BiDi ~ 0
+PIEXT26
+Text GLabel 5600 10550 2    50   BiDi ~ 0
+PIEXT28
+Text GLabel 5600 10750 2    50   BiDi ~ 0
+PIEXT32
+Text GLabel 5600 10950 2    50   BiDi ~ 0
+PIEXT36
+Text GLabel 5600 11050 2    50   BiDi ~ 0
+PIEXT38
+Text GLabel 5600 11150 2    50   BiDi ~ 0
+PIEXT40
+$Comp
+L ice4pi:raspberry_pi_2_3_4_ordered J4
+U 1 1 6205596D
+P 4800 10200
+F 0 "J4" H 4800 11567 50  0000 C CNN
+F 1 "raspberry_pi_2_3_4_ordered" H 4800 11476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical_SMD" H 4800 10050 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 4800 10050 50  0001 C CNN
+F 4 "SSW-120-01-T-D-006" H 4800 10200 50  0001 C CNN "PN"
+	1    4800 10200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 9250 0    50   BiDi ~ 0
+PIEXT1
+Text GLabel 4000 9350 0    50   BiDi ~ 0
+PIEXT3
+Text GLabel 4000 9650 0    50   BiDi ~ 0
+PIEXT9
+Text GLabel 4000 10050 0    50   BiDi ~ 0
+PIEXT17
+Text GLabel 4000 10450 0    50   BiDi ~ 0
+PIEXT25
+Text GLabel 4000 11150 0    50   BiDi ~ 0
+PIEXT39
+Text GLabel 5600 9450 2    50   BiDi ~ 0
+PIEXT6
+Text GLabel 5600 9850 2    50   BiDi ~ 0
+PIEXT14
+Text GLabel 5600 10150 2    50   BiDi ~ 0
+PIEXT20
+Text GLabel 5600 10650 2    50   BiDi ~ 0
+PIEXT30
+Text GLabel 5600 10850 2    50   BiDi ~ 0
+PIEXT34
+Text GLabel 5600 9350 2    50   BiDi ~ 0
+PIEXT4
+Text GLabel 5600 9250 2    50   BiDi ~ 0
+PIEXT2
+$Comp
+L ice4pi:raspberry_pi_2_3_4_ordered J5
+U 1 1 6280CA39
+P 8300 10250
+F 0 "J5" H 8300 11617 50  0000 C CNN
+F 1 "raspberry_pi_2_3_4_ordered" H 8300 11526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 8300 10100 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 8300 10100 50  0001 C CNN
+F 4 "SSW-120-01-T-D-006" H 8300 10250 50  0001 C CNN "PN"
+	1    8300 10250
+	1    0    0    -1  
+$EndComp
+Text GLabel 10700 10200 0    50   Output ~ 0
+iCE_MOSI
+Text GLabel 10700 10300 0    50   Input ~ 0
+iCE_MISO
+Text GLabel 10700 10400 0    50   Output ~ 0
+iCE_SCK
+Text GLabel 12300 9700 2    50   Input ~ 0
+RS232_Tx_TTL
+Text GLabel 12300 9600 2    50   Output ~ 0
+RS232_Rx_TTL
+Text GLabel 12300 10100 2    50   Output ~ 0
+iCE_CREST
+Text GLabel 12300 10300 2    50   Input ~ 0
+iCE_CDONE
+Text GLabel 12300 10400 2    50   Output ~ 0
+iCE_SS_B
+Text GLabel 12300 11200 2    50   BiDi ~ 0
+PIO0_02
+Text GLabel 12300 11100 2    50   BiDi ~ 0
+PIO0_04
+Text GLabel 10700 11100 0    50   BiDi ~ 0
+PIO0_03
+Text GLabel 12300 11000 2    50   BiDi ~ 0
+PIO0_06
+Text GLabel 10700 11000 0    50   BiDi ~ 0
+PIO0_05
+Text GLabel 10700 10800 0    50   BiDi ~ 0
+PIO0_08
+Text GLabel 10700 10700 0    50   BiDi ~ 0
+PIO0_10
+Text GLabel 12300 10600 2    50   BiDi ~ 0
+PIO0_12
+Text GLabel 10700 10600 0    50   BiDi ~ 0
+PIO0_11
+Text GLabel 12300 10500 2    50   BiDi ~ 0
+PIO0_13
+Text GLabel 10700 10900 0    50   BiDi ~ 0
+PIO0_07
+Text GLabel 12300 10800 2    50   BiDi ~ 0
+PIO0_09
+Text GLabel 10700 10000 0    50   BiDi ~ 0
+PIO0_14
+Text GLabel 12300 10000 2    50   BiDi ~ 0
+PIO0_15
+Text GLabel 10700 9900 0    50   BiDi ~ 0
+PIO0_16
+Text GLabel 12300 9800 2    50   BiDi ~ 0
+PIO0_17
+Text GLabel 10700 9800 0    50   BiDi ~ 0
+PIO0_18
+Text GLabel 10700 9600 0    50   BiDi ~ 0
+PIO0_19
+Text GLabel 10700 9500 0    50   BiDi ~ 0
+PIO0_21
+Text GLabel 10700 9400 0    50   BiDi ~ 0
+PIO0_20
+$Comp
+L ice4pi:raspberry_pi_2_3_4_ordered J6
+U 1 1 62828D4B
+P 11500 10250
+F 0 "J6" H 11500 11617 50  0000 C CNN
+F 1 "raspberry_pi_2_3_4_ordered" H 11500 11526 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 11500 10100 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 11500 10100 50  0001 C CNN
+F 4 "SSW-120-01-T-D-006" H 11500 10250 50  0001 C CNN "PN"
+	1    11500 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0153
+U 1 1 62828D52
+P 12300 9200
+F 0 "#PWR0153" H 12300 9050 50  0001 C CNN
+F 1 "+5V" H 12315 9373 50  0000 C CNN
+F 2 "" H 12300 9200 50  0001 C CNN
+F 3 "" H 12300 9200 50  0001 C CNN
+	1    12300 9200
+	1    0    0    -1  
+$EndComp
+Connection ~ 12300 9300
+Wire Wire Line
+	12300 9300 12300 9200
+$Comp
+L power:GND #PWR0154
+U 1 1 62828D5A
+P 12900 11450
+F 0 "#PWR0154" H 12900 11200 50  0001 C CNN
+F 1 "GND" H 12905 11277 50  0000 C CNN
+F 2 "" H 12900 11450 50  0001 C CNN
+F 3 "" H 12900 11450 50  0001 C CNN
+	1    12900 11450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 11450 12900 10900
+Wire Wire Line
+	12900 10700 12900 10900
+Connection ~ 12900 10900
+Wire Wire Line
+	12900 10200 12900 10700
+Wire Wire Line
+	12900 9900 12900 10200
+Connection ~ 12900 10200
+Wire Wire Line
+	12300 10900 12900 10900
+Wire Wire Line
+	12300 10700 12900 10700
+Wire Wire Line
+	12300 10200 12900 10200
+Wire Wire Line
+	12300 9900 12900 9900
+Wire Wire Line
+	12300 9500 12900 9500
+Wire Wire Line
+	12900 9500 12900 9900
+Connection ~ 12900 9900
+$Comp
+L power:+3.3V #PWR0155
+U 1 1 62828D6D
+P 10250 9200
+F 0 "#PWR0155" H 10250 9050 50  0001 C CNN
+F 1 "+3.3V" H 10265 9373 50  0000 C CNN
+F 2 "" H 10250 9200 50  0001 C CNN
+F 3 "" H 10250 9200 50  0001 C CNN
+	1    10250 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 9300 10250 9300
+Wire Wire Line
+	10250 9300 10250 9200
+Wire Wire Line
+	10250 9300 10250 10100
+Wire Wire Line
+	10250 10100 10700 10100
+Connection ~ 10250 9300
+$Comp
+L power:GND #PWR0156
+U 1 1 62828D78
+P 10100 11300
+F 0 "#PWR0156" H 10100 11050 50  0001 C CNN
+F 1 "GND" H 10105 11127 50  0000 C CNN
+F 2 "" H 10100 11300 50  0001 C CNN
+F 3 "" H 10100 11300 50  0001 C CNN
+	1    10100 11300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 11200 10100 11200
+Wire Wire Line
+	10100 11200 10100 11300
+Wire Wire Line
+	10700 10500 10100 10500
+Wire Wire Line
+	10100 10500 10100 11200
+Connection ~ 10100 11200
+Wire Wire Line
+	10700 9700 10100 9700
+Wire Wire Line
+	10100 9700 10100 10500
+Connection ~ 10100 10500
+Wire Wire Line
+	12300 9300 12300 9400
+Connection ~ 12900 10700
+Text GLabel 7500 9500 0    50   BiDi ~ 0
+PIEXT5
+Text GLabel 7500 9600 0    50   BiDi ~ 0
+PIEXT7
+Text GLabel 7500 9800 0    50   BiDi ~ 0
+PIEXT11
+Text GLabel 7500 9900 0    50   BiDi ~ 0
+PIEXT13
+Text GLabel 7500 10000 0    50   BiDi ~ 0
+PIEXT15
+Text GLabel 7500 10200 0    50   BiDi ~ 0
+PIEXT19
+Text GLabel 7500 10300 0    50   BiDi ~ 0
+PIEXT21
+Text GLabel 7500 10400 0    50   BiDi ~ 0
+PIEXT23
+Text GLabel 7500 10600 0    50   BiDi ~ 0
+PIEXT27
+Text GLabel 7500 10700 0    50   BiDi ~ 0
+PIEXT29
+Text GLabel 7500 10800 0    50   BiDi ~ 0
+PIEXT31
+Text GLabel 7500 10900 0    50   BiDi ~ 0
+PIEXT33
+Text GLabel 7500 11000 0    50   BiDi ~ 0
+PIEXT35
+Text GLabel 7500 11100 0    50   BiDi ~ 0
+PIEXT37
+Text GLabel 7500 9300 0    50   BiDi ~ 0
+PIEXT1
+Text GLabel 7500 9400 0    50   BiDi ~ 0
+PIEXT3
+Text GLabel 7500 9700 0    50   BiDi ~ 0
+PIEXT9
+Text GLabel 7500 10100 0    50   BiDi ~ 0
+PIEXT17
+Text GLabel 7500 10500 0    50   BiDi ~ 0
+PIEXT25
+Text GLabel 7500 11200 0    50   BiDi ~ 0
+PIEXT39
+Text GLabel 9100 9600 2    50   BiDi ~ 0
+PIEXT8
+Text GLabel 9100 9700 2    50   BiDi ~ 0
+PIEXT10
+Text GLabel 9100 9800 2    50   BiDi ~ 0
+PIEXT12
+Text GLabel 9100 10000 2    50   BiDi ~ 0
+PIEXT16
+Text GLabel 9100 10100 2    50   BiDi ~ 0
+PIEXT18
+Text GLabel 9100 10300 2    50   BiDi ~ 0
+PIEXT22
+Text GLabel 9100 10400 2    50   BiDi ~ 0
+PIEXT24
+Text GLabel 9100 10500 2    50   BiDi ~ 0
+PIEXT26
+Text GLabel 9100 10600 2    50   BiDi ~ 0
+PIEXT28
+Text GLabel 9100 10800 2    50   BiDi ~ 0
+PIEXT32
+Text GLabel 9100 11000 2    50   BiDi ~ 0
+PIEXT36
+Text GLabel 9100 11100 2    50   BiDi ~ 0
+PIEXT38
+Text GLabel 9100 11200 2    50   BiDi ~ 0
+PIEXT40
+Text GLabel 9100 9500 2    50   BiDi ~ 0
+PIEXT6
+Text GLabel 9100 9900 2    50   BiDi ~ 0
+PIEXT14
+Text GLabel 9100 10200 2    50   BiDi ~ 0
+PIEXT20
+Text GLabel 9100 10700 2    50   BiDi ~ 0
+PIEXT30
+Text GLabel 9100 10900 2    50   BiDi ~ 0
+PIEXT34
+Text GLabel 9100 9400 2    50   BiDi ~ 0
+PIEXT4
+Text GLabel 9100 9300 2    50   BiDi ~ 0
+PIEXT2
+Text GLabel 9650 9400 2    50   BiDi ~ 0
+PIEXT4
+Text GLabel 9650 9300 2    50   BiDi ~ 0
+PIEXT2
+$Comp
+L power:+5V #PWR0145
+U 1 1 628A111C
+P 9600 9200
+F 0 "#PWR0145" H 9600 9050 50  0001 C CNN
+F 1 "+5V" H 9615 9373 50  0000 C CNN
+F 2 "" H 9600 9200 50  0001 C CNN
+F 3 "" H 9600 9200 50  0001 C CNN
+	1    9600 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 9200 9600 9300
+Wire Wire Line
+	9650 9300 9600 9300
+Connection ~ 9600 9300
+Wire Wire Line
+	9600 9300 9600 9400
+Wire Wire Line
+	9650 9400 9600 9400
+Text GLabel 9650 10900 2    50   BiDi ~ 0
+PIEXT34
+Text GLabel 9650 10700 2    50   BiDi ~ 0
+PIEXT30
+Text GLabel 9650 10200 2    50   BiDi ~ 0
+PIEXT20
+Text GLabel 9650 9900 2    50   BiDi ~ 0
+PIEXT14
+Text GLabel 9650 9500 2    50   BiDi ~ 0
+PIEXT6
+Wire Wire Line
+	9600 9500 9600 9900
+$Comp
+L power:GND #PWR0146
+U 1 1 62967C60
+P 9600 11300
+F 0 "#PWR0146" H 9600 11050 50  0001 C CNN
+F 1 "GND" H 9605 11127 50  0000 C CNN
+F 2 "" H 9600 11300 50  0001 C CNN
+F 3 "" H 9600 11300 50  0001 C CNN
+	1    9600 11300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 9500 9600 9500
+Wire Wire Line
+	9650 9900 9600 9900
+Connection ~ 9600 9900
+Wire Wire Line
+	9600 9900 9600 10200
+Wire Wire Line
+	9650 10200 9600 10200
+Connection ~ 9600 10200
+Wire Wire Line
+	9600 10200 9600 10700
+Wire Wire Line
+	9650 10700 9600 10700
+Connection ~ 9600 10700
+Wire Wire Line
+	9600 10700 9600 10900
+Wire Wire Line
+	9650 10900 9600 10900
+Connection ~ 9600 10900
+Text GLabel 6900 9700 0    50   BiDi ~ 0
+PIEXT9
+Text GLabel 6900 10500 0    50   BiDi ~ 0
+PIEXT25
+Text GLabel 6900 11200 0    50   BiDi ~ 0
+PIEXT39
+$Comp
+L power:GND #PWR0151
+U 1 1 62A0490C
+P 7000 11300
+F 0 "#PWR0151" H 7000 11050 50  0001 C CNN
+F 1 "GND" H 7005 11127 50  0000 C CNN
+F 2 "" H 7000 11300 50  0001 C CNN
+F 3 "" H 7000 11300 50  0001 C CNN
+	1    7000 11300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 9700 7000 9700
+Wire Wire Line
+	7000 9700 7000 10500
+Wire Wire Line
+	6900 11200 7000 11200
+Connection ~ 7000 11200
+Wire Wire Line
+	7000 11200 7000 11300
+Wire Wire Line
+	6900 10500 7000 10500
+Connection ~ 7000 10500
+Wire Wire Line
+	7000 10500 7000 11200
+Text GLabel 6400 10100 0    50   BiDi ~ 0
+PIEXT17
+Text GLabel 6400 9300 0    50   BiDi ~ 0
+PIEXT1
+$Comp
+L power:+3.3V #PWR0152
+U 1 1 62A596A4
+P 6500 9150
+F 0 "#PWR0152" H 6500 9000 50  0001 C CNN
+F 1 "+3.3V" H 6515 9323 50  0000 C CNN
+F 2 "" H 6500 9150 50  0001 C CNN
+F 3 "" H 6500 9150 50  0001 C CNN
+	1    6500 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 9150 6500 9300
+Wire Wire Line
+	6500 10100 6400 10100
+Wire Wire Line
+	6500 9300 6400 9300
+Connection ~ 6500 9300
+Wire Wire Line
+	6500 9300 6500 10100
+Wire Wire Line
+	9600 10900 9600 11300
 $EndSCHEMATC

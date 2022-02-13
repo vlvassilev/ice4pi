@@ -1,3 +1,11 @@
+ice4pi-bridge (1.0) buster; urgency=medium
+
+  * New project reusing ice4pi-2.0 in regular form facotor board
+  * Replaced through-hole hat connector with 2x SMD interfaces
+  * Connected additional set of IO pins to the extension side
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sun, 13 Feb 2022 16:16:45 +0100
+
 ice4pi (2.0) buster; urgency=medium
 
   * Removed the IrDA transciever module and its passive components
